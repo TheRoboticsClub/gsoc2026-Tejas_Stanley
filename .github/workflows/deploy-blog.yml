@@ -29,12 +29,20 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.2"
+          ruby-version: "3.2.2"
           bundler-cache: true
           working-directory: docs
 
+      - name: Install system and Python dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+          pip3 install --upgrade jupyter
+
       - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "/gsoc2026-Tejas_Stanley"
+        run: |
+          export JEKYLL_ENV=production
+          bundle exec jekyll build --baseurl "/gsoc2026-Tejas_Stanley"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
