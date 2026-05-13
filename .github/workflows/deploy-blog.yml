@@ -17,9 +17,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     defaults:
       run:
-        working-directory: blog
+        working-directory: docs
 
     steps:
       - name: Checkout
@@ -28,21 +29,30 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.2"
+          ruby-version: "3.2.2"
           bundler-cache: true
-          working-directory: blog
+          working-directory: docs
+
+      - name: Install system and Python dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+          pip3 install --upgrade jupyter
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "/gsoc2026-Tejas_Stanley/blog"
+        run: |
+          export JEKYLL_ENV=production
+          bundle exec jekyll build --baseurl "/gsoc2026-Tejas_Stanley"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: blog/_site
+          path: docs/_site
 
   deploy:
     environment:
       name: github-pages
+
     runs-on: ubuntu-latest
     needs: build
 
