@@ -16,7 +16,8 @@ latest_posts:
   enabled: false
 ---
 
-# Tejas Stanley | JdeRobot x GSoC2026
+<!-- # Tejas Stanley | JdeRobot x GSoC2026 -->
+<img src="/assets/img/GSOCXJDE.png" width="100%">
 
 ## About Me
 
