@@ -17,8 +17,7 @@ latest_posts:
 ---
 
 <!-- # Tejas Stanley | JdeRobot x GSoC2026 -->
-<img src="/assets/img/GSOCXJDE.png" width="100%">
-
+<img src="{{ '/assets/img/GSOCXJDE.png' | relative_url }}" alt="GSoC x JdeRobot" style="max-width: 100%; margin-bottom: 1.5rem;">
 ## About Me
 
 Hello and welcome!
