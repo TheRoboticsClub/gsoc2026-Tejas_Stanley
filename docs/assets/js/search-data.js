@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gsoc2026-Tejas_Stanley/blog/";
           },
-        },{id: "nav-submenus",
-          title: "submenus",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/gsoc2026-Tejas_Stanley/_pages/dropdown/";
-          },
         },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
