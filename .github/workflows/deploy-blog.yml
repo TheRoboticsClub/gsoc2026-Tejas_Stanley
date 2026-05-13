@@ -1,4 +1,4 @@
-name: Deploy Blog
+name: Deploy site
 
 on:
   push:
@@ -6,21 +6,11 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
+  contents: write
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: docs
 
     steps:
       - name: Checkout
@@ -31,31 +21,36 @@ jobs:
         with:
           ruby-version: "3.2.2"
           bundler-cache: true
-          working-directory: docs
+          working-directory: site
 
-      - name: Install system and Python dependencies
+      - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y imagemagick
-          pip3 install --upgrade jupyter
 
-      - name: Build with Jekyll
+      - name: Install Python dependencies
         run: |
+          pip3 install --upgrade pip
+          pip3 install jupyter
+
+      - name: Install Ruby dependencies
+        run: bundle install
+        working-directory: site
+
+      - name: Build site
+        run: |
+          pwd
+          ls
           export JEKYLL_ENV=production
-          bundle exec jekyll build --baseurl "/gsoc2026-Tejas_Stanley"
+          bundle exec jekyll build \
+            --baseurl "/gsoc2026-Tejas_Stanley" \
+            --destination ../docs
+        working-directory: site
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Add .nojekyll
+        run: touch docs/.nojekyll
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: docs/_site
-
-  deploy:
-    environment:
-      name: github-pages
-
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+          folder: docs
