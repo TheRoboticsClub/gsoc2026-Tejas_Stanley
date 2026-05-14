@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gsoc2026-Tejas_Stanley/blog/";
           },
-        },{id: "books-the-godfather",
+        },{id: "post-community-bonding-week-0",
+        
+          title: "Community Bonding Week 0",
+        
+        description: "Setting up the blog, meeting mentors, and exploring Cityscapes",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/gsoc2026-Tejas_Stanley/blog/2026/community-bonding-week-0/";
+          
+        },
+      },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
