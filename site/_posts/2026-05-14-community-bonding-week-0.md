@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Community Bonding Week 0
-date: 2026-05-14 18:00:00
+date: 2026-05-14
+published: true
 description: Setting up the blog, meeting mentors, and exploring Cityscapes
-tags: gsoc jde-robotics perceptionmetrics cityscapes
+tags: gsoc robotics perceptionmetrics cityscapes
 categories: gsoc
 ---
 
