@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gsoc2026-Tejas_Stanley/blog/";
           },
-        },{id: "post-community-bonding-week-0",
+        },{id: "post-community-bonding-week-1",
+        
+          title: "Community Bonding Week 1",
+        
+        description: "Exploring PerceptionMetrics, Cityscapes, and evaluation workflows",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/gsoc2026-Tejas_Stanley/blog/2026/community-bonding-week-1/";
+          
+        },
+      },{id: "post-community-bonding-week-0",
         
           title: "Community Bonding Week 0",
         
