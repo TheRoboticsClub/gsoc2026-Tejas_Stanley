@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Community Bonding Week 1
-date: 2026-05-21
+date: 2026-05-20
 published: true
 description: Exploring PerceptionMetrics, Cityscapes, and evaluation workflows
 tags: gsoc robotics perceptionmetrics cityscapes
