@@ -2,4 +2,5 @@ PerceptionMetrics/
 datasets/
 .vscode/
 DeepLabV3Plus-Pytorch/
+semantic-kitti-api/
 git
