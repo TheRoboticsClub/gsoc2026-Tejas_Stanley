@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gsoc2026-Tejas_Stanley/blog/";
           },
-        },{id: "post-community-bonding-week-1",
+        },{id: "post-coding-period-week-1",
+        
+          title: "Coding Period Week 1",
+        
+        description: "Implementing the Cityscapes tutorial and improving the dataset adapter, exploring SemanticKITTI dataset",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/gsoc2026-Tejas_Stanley/blog/2026/coding-period-week-1/";
+          
+        },
+      },{id: "post-community-bonding-week-1",
         
           title: "Community Bonding Week 1",
         
