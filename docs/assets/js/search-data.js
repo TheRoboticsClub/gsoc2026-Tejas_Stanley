@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gsoc2026-Tejas_Stanley/blog/";
           },
-        },{id: "post-coding-period-week-1",
+        },{id: "post-coding-period-week-2",
+        
+          title: "Coding Period Week 2",
+        
+        description: "Implementing the SemanticKITTI dataset adapter and preparing the tutorial with MMDetection3D and PerceptionMetrics",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/gsoc2026-Tejas_Stanley/blog/2026/coding-period-week-2/";
+          
+        },
+      },{id: "post-coding-period-week-1",
         
           title: "Coding Period Week 1",
         
