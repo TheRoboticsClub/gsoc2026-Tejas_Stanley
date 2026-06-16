@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gsoc2026-Tejas_Stanley/blog/";
           },
-        },{id: "post-coding-period-week-2",
+        },{id: "post-coding-period-week-3",
+        
+          title: "Coding Period Week 3",
+        
+        description: "Improving PerceptionMetrics documentation and preparing the nuImages image segmentation tutorial",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/gsoc2026-Tejas_Stanley/blog/2026/coding-period-week-3/";
+          
+        },
+      },{id: "post-coding-period-week-2",
         
           title: "Coding Period Week 2",
         
