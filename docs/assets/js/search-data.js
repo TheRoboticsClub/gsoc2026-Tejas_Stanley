@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gsoc2026-Tejas_Stanley/blog/";
           },
-        },{id: "post-coding-period-week-3",
+        },{id: "post-coding-period-weeks-4-and-5",
+        
+          title: "Coding Period Weeks 4 and 5",
+        
+        description: "Improving segmentation evaluation with ontology translation and starting the PerceptionMetrics GUI task refactor",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/gsoc2026-Tejas_Stanley/blog/2026/coding-period-week-4-5/";
+          
+        },
+      },{id: "post-coding-period-week-3",
         
           title: "Coding Period Week 3",
         
