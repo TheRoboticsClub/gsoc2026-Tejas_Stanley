@@ -70,7 +70,7 @@ As discussed with David and Praveena, the visualization can also be extended lat
 
 The maximum number of rendered points can also be controlled from the sidebar. I kept the default at 50K points. I tried 100K points as well, but the browser started to lag, so 50K is a better default for now. This limit can be increased later if needed.
 
-![LiDAR segmentation dataset viewer preview](/assets/img/LIDAR_plotly_render.png)
+<img src="{{ '/assets/img/LIDAR_plotly_render.png' | relative_url }}" alt="LiDAR segmentation dataset viewer preview" style="max-width: 100%; margin-bottom: 1.5rem;">
 
 
 ## Next Steps
