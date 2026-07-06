@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gsoc2026-Tejas_Stanley/blog/";
           },
-        },{id: "post-coding-period-weeks-4-and-5",
+        },{id: "post-coding-period-week-6",
+        
+          title: "Coding Period Week 6",
+        
+        description: "Extending the PerceptionMetrics GUI for image segmentation and starting LiDAR visualization",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/gsoc2026-Tejas_Stanley/blog/2026/coding-period-week-6/";
+          
+        },
+      },{id: "post-coding-period-weeks-4-and-5",
         
           title: "Coding Period Weeks 4 and 5",
         
