@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gsoc2026-Tejas_Stanley/blog/";
           },
-        },{id: "post-coding-period-week-6",
+        },{id: "post-coding-period-week-7",
+        
+          title: "Coding Period Week 7",
+        
+        description: "Adding LiDAR segmentation GUI support with SemanticKITTI",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/gsoc2026-Tejas_Stanley/blog/2026/coding-period-week-7/";
+          
+        },
+      },{id: "post-coding-period-week-6",
         
           title: "Coding Period Week 6",
         
