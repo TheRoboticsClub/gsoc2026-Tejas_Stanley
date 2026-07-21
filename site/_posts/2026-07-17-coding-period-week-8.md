@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Coding Period Week 7
+title: Coding Period Week 8
 date: 2026-07-17
 published: true
 description: Image segmentation GUI updates and review changes
