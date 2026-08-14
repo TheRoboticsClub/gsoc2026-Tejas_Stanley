@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gsoc2026-Tejas_Stanley/blog/";
           },
-        },{id: "post-coding-period-week-9-10",
+        },{id: "post-coding-period-week-11",
+        
+          title: "Coding Period Week 11",
+        
+        description: "LiDAR detection setup and dataset adapter tests",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/gsoc2026-Tejas_Stanley/blog/2026/coding-period-week-11/";
+          
+        },
+      },{id: "post-coding-period-week-9-10",
         
           title: "Coding Period Week 9-10",
         
