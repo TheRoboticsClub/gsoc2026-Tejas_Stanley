@@ -16,7 +16,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gsoc2026-Tejas_Stanley/blog/";
           },
-        },{id: "post-coding-period-week-11",
+        },{id: "post-final-report",
+        
+          title: "Final Report",
+        
+        description: "Final report for Google Summer of Code 2026 with JdeRobot and PerceptionMetrics",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/gsoc2026-Tejas_Stanley/blog/2026/final-report/";
+          
+        },
+      },{id: "post-coding-period-week-12",
+        
+          title: "Coding Period Week 12",
+        
+        description: "Final GUI tests, documentation updates, and LiDAR detection exploration",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/gsoc2026-Tejas_Stanley/blog/2026/coding-period-week-12/";
+          
+        },
+      },{id: "post-coding-period-week-11",
         
           title: "Coding Period Week 11",
         
