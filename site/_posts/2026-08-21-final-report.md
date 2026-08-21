@@ -16,7 +16,10 @@ Organization: [JdeRobot](https://jderobot.github.io/)
 
 Contributor: Tejas Stephen Stanley
 
-Project: PerceptionMetrics dataset support, GUI extensions, tutorials, and tests
+GSoC Project Page: [ PerceptionMetrics dataset support, GUI extensions, tutorials, and tests
+](https://summerofcode.withgoogle.com/programs/2026/projects/1lzN79bZ)
+
+Mentors: David Pascual and Sakhineti Praveena
 
 ---
 
